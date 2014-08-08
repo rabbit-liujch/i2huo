@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.i2huo</groupId>
+  <artifactId>i2huo-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>i2huo-parent Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>i2huo-parent</finalName>
+  </build>
+  <modules>
+  	<module>i2huo-utils</module>
+  	<module>i2huo-dao</module>
+  	<module>i2huo-service</module>
+  	<module>i2huo-model</module>
+  	<module>i2huo-common</module>
+  	<module>i2huo-web</module>
+  	<module>i2huo-oss</module>
+  	<module>i2huo-vo</module>
+  	<module>i2huo-web-site</module>
+  	<module>i2huo-web-vo</module>
+  	<module>i2huo-web-oss</module>
+  </modules>
+  
+  <properties>
+  <!--指定Maven用什么编码来读取源码及文档 -->
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <!--指定Maven用什么编码来呈现站点的HTML文件 -->
+  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  <mysql.version>5.1.25</mysql.version>
+  <ibatis.version>4.2.2.Final</ibatis.version>
+  <spring.version>4.0.5.RELEASE</spring.version>
+  <aspectj.version>1.7.2</aspectj.version>
+  </properties>
+  
+  <repositories>
+	<repository>
+		<id>public</id>
+		<name>Public Repositories</name>
+		<url>http://192.168.0.248:8081/nexus/content/groups/public/</url>
+	</repository>
+  </repositories>
+</project>
